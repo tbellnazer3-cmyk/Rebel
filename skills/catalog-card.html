@@ -1,0 +1,33 @@
+<!--
+  SKILL: catalog-card.html
+  Descripción: Tarjeta de catálogo PDF. Abre el archivo en nueva pestaña (no fuerza descarga).
+  Dependencias: css/styles.css (sección CATÁLOGOS)
+  Uso: Duplicar este bloque dentro de .catalogo-grid y rellenar los valores marcados con [].
+
+  Variables a reemplazar:
+    [MARCA]         → Nombre de la marca (ej: Recoil)
+    [NOMBRE]        → Nombre del catálogo (ej: Technical Catalog)
+    [ARCHIVO.pdf]   → Ruta exacta del PDF (ej: catalogos/Recoil-Technical-Catalog.pdf)
+-->
+
+<div class="catalog-card">
+  <div class="catalog-card-top">
+    <div class="catalog-card-icon" aria-hidden="true">
+      <!-- Ícono PDF (no cambiar) -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+        <line x1="16" y1="13" x2="8" y2="13"/>
+        <line x1="16" y1="17" x2="8" y2="17"/>
+        <line x1="10" y1="9" x2="8" y2="9"/>
+      </svg>
+    </div>
+    <span class="catalog-card-brand">[MARCA]</span>
+  </div>
+  <div class="catalog-card-body">
+    <h3 class="catalog-card-name">[NOMBRE]</h3>
+  </div>
+  <a class="catalog-card-link" href="[ARCHIVO.pdf]" target="_blank" rel="noopener">
+    Ver catálogo →
+  </a>
+</div>

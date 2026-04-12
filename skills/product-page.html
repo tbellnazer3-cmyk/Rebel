@@ -1,0 +1,106 @@
+<!--
+  SKILL: product-page.html
+  Descripción: Página individual de producto. Imagen sticky a la izquierda, info a la derecha.
+  Dependencias: css/styles.css (sección PRODUCTO — página individual)
+  Uso: Copiar este archivo completo y reemplazar los valores marcados con [].
+
+  Variables a reemplazar:
+    [TITULO-HTML]       → Título para <title> (ej: Drill Out — Rebel Ltda.)
+    [META-DESC]         → Descripción para <meta description>
+    [ARCHIVO.jpg]       → Ruta de la imagen (ej: productos/drill-out.jpg)
+    [ALT-IMAGEN]        → Texto alternativo de la imagen
+    [LABEL-SECCION]     → Categoría del producto (ej: Extracción de pernos)
+    [NOMBRE-PRODUCTO]   → Nombre del producto en el h1
+    [DESCRIPCION]       → Descripción técnica del producto
+    [CARACTERISTICA-N]  → Bullets de características (repetir el <li> según necesidad)
+    [MARCA]             → Tags de marcas relacionadas (repetir <span> según necesidad)
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="[META-DESC]" />
+  <title>[TITULO-HTML]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" role="navigation" aria-label="Navegación principal">
+    <a href="index.html" class="navbar-logo">REBEL<span>.</span></a>
+    <ul class="navbar-links" id="navbar-links">
+      <li><a href="catalogos.html">Catálogos</a></li>
+      <li><a href="productos.html" class="nav-active">Productos</a></li>
+      <li><a href="index.html#videos">Videos</a></li>
+      <li><a href="index.html#contacto" class="nav-cta">Contáctanos</a></li>
+    </ul>
+    <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbar-links">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <main>
+    <section class="section section-light page-section">
+      <div class="container">
+
+        <a class="product-back" href="productos.html">
+          ← Volver a productos
+        </a>
+
+        <div class="product-page-layout">
+
+          <!-- Imagen -->
+          <div class="product-page-img-wrap">
+            <img src="[ARCHIVO.jpg]" alt="[ALT-IMAGEN]" />
+          </div>
+
+          <!-- Información -->
+          <div class="product-page-info">
+
+            <div class="product-page-header">
+              <span class="section-label">[LABEL-SECCION]</span>
+              <h1 class="product-page-title">[NOMBRE-PRODUCTO]</h1>
+            </div>
+
+            <div class="product-page-block">
+              <span class="product-page-block-label">Descripción</span>
+              <p>[DESCRIPCION]</p>
+            </div>
+
+            <div class="product-page-block">
+              <span class="product-page-block-label">Características</span>
+              <ul class="product-page-features">
+                <li>[CARACTERISTICA-1]</li>
+                <li>[CARACTERISTICA-2]</li>
+                <li>[CARACTERISTICA-3]</li>
+              </ul>
+            </div>
+
+            <div class="product-page-block">
+              <span class="product-page-block-label">Marcas relacionadas</span>
+              <div class="product-page-brands">
+                <span class="product-brand-tag">[MARCA]</span>
+              </div>
+            </div>
+
+            <div class="product-page-ctas">
+              <a href="index.html#contacto" class="btn btn-primary">Contáctanos por este producto</a>
+              <a href="productos.html" class="btn btn-outline-dark">← Volver a productos</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

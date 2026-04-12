@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rebel Ltda. — Importación y distribución de herramientas de precisión industriales en Chile. Representantes de Recoil, Sutton, Ducarbo, Warren & Browne, YG-1 y AVK." />
+  <title>Rebel Ltda. — Herramientas de Precisión Industrial</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <a href="#inicio" class="navbar-logo">REBEL<span>.</span></a>
+
+    <ul class="navbar-links" id="navbar-links">
+      <li><a href="catalogos.html">Catálogos</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <!-- TODO: habilitar Videos cuando el cliente entregue los nuevos videos -->
+      <li><a class="nav-disabled" aria-disabled="true" tabindex="-1">Videos</a></li>
+      <li><a href="contacto.html" class="nav-cta">Contáctanos</a></li>
+    </ul>
+
+    <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbar-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+
+      <!-- Columna izquierda -->
+      <div class="hero-left">
+        <span class="hero-badge">Desde 1980 en Chile</span>
+
+        <h1 class="hero-title">
+          Herramientas<br>
+          de <em>precisión</em><br>
+          industrial
+        </h1>
+
+        <p class="hero-description">
+          Importamos y distribuimos las mejores marcas mundiales de herramientas para mantención de maquinaria. Stock permanente, asesoría técnica directa.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#productos" class="btn btn-primary">
+            <!-- Ícono flecha -->
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+            Ver productos
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">44+</span>
+            <span class="stat-label">Años</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Marcas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Stock</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: grilla 2x2 de productos destacados -->
+      <div class="hero-right" aria-label="Productos destacados">
+
+        <!-- Tarjeta 1: Insertos Recoil -->
+        <div class="product-card">
+          <div class="product-card-icon" aria-hidden="true">
+            <!-- Ícono: bobina / rosca -->
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 2a10 10 0 0 1 0 20"/>
+              <path d="M12 6a6 6 0 0 1 0 12"/>
+            </svg>
+          </div>
+          <span class="product-card-brand">Recoil</span>
+          <h3 class="product-card-name">Insertos<br>de Rosca</h3>
+          <p class="product-card-desc">Recuperación y refuerzo de roscas dañadas en acero inoxidable.</p>
+        </div>
+
+        <!-- Tarjeta 2: Brocas HSS -->
+        <div class="product-card">
+          <div class="product-card-icon" aria-hidden="true">
+            <!-- Ícono: broca -->
+            <svg viewBox="0 0 24 24">
+              <line x1="12" y1="2" x2="12" y2="18"/>
+              <path d="M8 18l4 4 4-4"/>
+              <path d="M9 6l3-3 3 3"/>
+              <line x1="9" y1="10" x2="15" y2="10"/>
+              <line x1="9" y1="14" x2="15" y2="14"/>
+            </svg>
+          </div>
+          <span class="product-card-brand">Sutton</span>
+          <h3 class="product-card-name">Brocas<br>HSS</h3>
+          <p class="product-card-desc">Brocas de acero rápido para acero, aluminio y fundición.</p>
+        </div>
+
+        <!-- Tarjeta 3: Brocas Carburo -->
+        <div class="product-card">
+          <div class="product-card-icon" aria-hidden="true">
+            <!-- Ícono: diamante / carburo -->
+            <svg viewBox="0 0 24 24">
+              <polygon points="12 2 22 9 18 20 6 20 2 9"/>
+              <line x1="12" y1="2" x2="12" y2="20"/>
+              <line x1="2" y1="9" x2="22" y2="9"/>
+            </svg>
+          </div>
+          <span class="product-card-brand">Ducarbo</span>
+          <h3 class="product-card-name">Brocas<br>Carburo</h3>
+          <p class="product-card-desc">Carburo de tungsteno para materiales duros y alta velocidad.</p>
+        </div>
+
+        <!-- Tarjeta 4: Llaves Torque -->
+        <div class="product-card">
+          <div class="product-card-icon" aria-hidden="true">
+            <!-- Ícono: llave -->
+            <svg viewBox="0 0 24 24">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <span class="product-card-brand">Warren & Browne</span>
+          <h3 class="product-card-name">Llaves<br>Torque</h3>
+          <p class="product-card-desc">Llaves dinamométricas de precisión y repuestos originales.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="hero-scroll" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <path d="M6 9l6 6 6-6"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================== MARCAS ===================== -->
+  <section class="marcas" id="marcas" aria-label="Marcas representadas">
+    <div class="marcas-inner">
+      <span class="marcas-label">Representantes<br>oficiales</span>
+      <div class="marcas-divider" aria-hidden="true"></div>
+      <ul class="marcas-list" role="list">
+        <li class="marca-item">
+          <span class="marca-name">Recoil</span>
+          <span class="marca-country">AU</span>
+        </li>
+        <li class="marca-item">
+          <span class="marca-name">Sutton</span>
+          <span class="marca-country">AU</span>
+        </li>
+        <li class="marca-item">
+          <span class="marca-name">Ducarbo</span>
+          <span class="marca-country">DK</span>
+        </li>
+        <li class="marca-item">
+          <span class="marca-name">Warren &amp; Browne</span>
+          <span class="marca-country">AU</span>
+        </li>
+        <li class="marca-item">
+          <span class="marca-name">YG-1</span>
+          <span class="marca-country">KR</span>
+        </li>
+        <li class="marca-item">
+          <span class="marca-name">AVK</span>
+          <span class="marca-country">USA</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner container">
+      <a href="index.html" class="footer-logo">REBEL<span>.</span></a>
+      <nav class="footer-nav" aria-label="Links rápidos">
+        <a href="catalogos.html">Catálogos</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contáctanos</a>
+      </nav>
+      <div class="footer-info">
+        <span>Santiago, Chile</span>
+        <span>Fundada 1980</span>
+        <span>contacto@rebel.cl</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Rebel Ltda. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="whatsapp-btn" href="https://wa.me/56998742476" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Escríbenos</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!--
+  SKILL: hero.html
+  Descripción: Hero de dos columnas — texto+stats a la izquierda, grilla 2x2 de productos a la derecha.
+  Dependencias: css/styles.css (sección HERO), fuentes Google
+  Uso: Copiar el bloque <section class="hero"> después del navbar.
+-->
+
+<section class="hero" id="inicio">
+  <div class="hero-inner">
+
+    <!-- Columna izquierda -->
+    <div class="hero-left">
+      <span class="hero-badge">Desde 1980 en Chile</span>
+
+      <h1 class="hero-title">
+        Herramientas<br>
+        de <em>precisión</em><br>
+        industrial
+      </h1>
+
+      <p class="hero-description">
+        Importamos y distribuimos las mejores marcas mundiales de herramientas para mantención de maquinaria. Stock permanente, asesoría técnica directa.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#productos" class="btn btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+          Ver productos
+        </a>
+        <a href="#catalogos" class="btn btn-secondary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+          Descargar catálogo
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">44+</span>
+          <span class="stat-label">Años</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Marcas</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Stock</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna derecha: grilla 2x2 -->
+    <div class="hero-right" aria-label="Productos destacados">
+
+      <div class="product-card">
+        <div class="product-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 0 1 0 20"/><path d="M12 6a6 6 0 0 1 0 12"/></svg>
+        </div>
+        <span class="product-card-brand">Recoil</span>
+        <h3 class="product-card-name">Insertos<br>de Rosca</h3>
+        <p class="product-card-desc">Recuperación y refuerzo de roscas dañadas en acero inoxidable.</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="18"/><path d="M8 18l4 4 4-4"/><path d="M9 6l3-3 3 3"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
+        </div>
+        <span class="product-card-brand">Sutton</span>
+        <h3 class="product-card-name">Brocas<br>HSS</h3>
+        <p class="product-card-desc">Brocas de acero rápido para acero, aluminio y fundición.</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 22 9 18 20 6 20 2 9"/><line x1="12" y1="2" x2="12" y2="20"/><line x1="2" y1="9" x2="22" y2="9"/></svg>
+        </div>
+        <span class="product-card-brand">Ducarbo</span>
+        <h3 class="product-card-name">Brocas<br>Carburo</h3>
+        <p class="product-card-desc">Carburo de tungsteno para materiales duros y alta velocidad.</p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <span class="product-card-brand">Warren & Browne</span>
+        <h3 class="product-card-name">Llaves<br>Torque</h3>
+        <p class="product-card-desc">Llaves dinamométricas de precisión y repuestos originales.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
