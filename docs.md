@@ -21,7 +21,7 @@
 | Footer           | ✅ Completo   | En todas las páginas — logo, links, info, copyright |
 | WhatsApp flotante| ✅ Completo   | En todas las páginas — botón verde fijo esquina inferior derecha |
 | Responsivo       | ⏳ Pendiente  | Revisión final en Prompt 6 |
-| GitHub           | ✅ Completo   | Repositorio inicializado — commit v1 |
+| GitHub           | ✅ Completo   | Repositorio en github.com/tbellnazer3-cmyk/Rebel — rama main |
 
 ---
 
@@ -135,11 +135,16 @@ El cliente no tiene los videos nuevos listos. El link "Videos" en el navbar est�
 - Botón WhatsApp flotante (`#25D366`) en las 9 páginas
 - Skill: `footer.html`
 
-**Pendiente para Prompt 6:**
+**Cierre de sesión día 1 (2026-04-12):**
+- Repositorio GitHub creado: https://github.com/tbellnazer3-cmyk/Rebel
+- Push exitoso a rama `main`
+- GitHub Pages disponible para activar desde Settings → Pages
+
+**Pendiente para Prompt 6 (día 2):**
 - Revisión responsivo en mobile y tablet
-- Verificación de todos los links
+- Verificación de todos los links internos
 - Performance (lazy loading de imágenes)
-- Preparar para subir a hosting (Netlify o GitHub Pages)
+- Activar dominio personalizado rebel.cl en GitHub Pages
 
 ---
 
