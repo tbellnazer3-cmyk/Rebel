@@ -171,6 +171,16 @@ El link "Videos" fue eliminado completamente del navbar en las 9 páginas. El CS
 - Sitio completo — v1 lista para publicar
 - Push exitoso a https://github.com/tbellnazer3-cmyk/Rebel — rama main
 
+### Sesión 3 — Formulario de contacto (2026-04-14)
+
+**Formspree conectado:**
+- `contacto.html`: `action="#"` → `action="https://formspree.io/f/mojyvkpz"`
+- Removido atributo `novalidate` — validación HTML5 activa
+- Los mensajes del formulario ahora llegan al email configurado en Formspree
+
+**Cierre sesión 3 (2026-04-14):**
+- Push exitoso a https://github.com/tbellnazer3-cmyk/Rebel — rama main
+
 ---
 
 ## Datos de contacto reales
@@ -202,7 +212,7 @@ El link "Videos" fue eliminado completamente del navbar en las 9 páginas. El CS
 
 1. Contenido real de cada página de producto (descripciones y características técnicas)
 2. Dirección física exacta para la página de Contacto
-3. Configurar formulario de contacto con Formspree u otro servicio
+3. ~~Configurar formulario de contacto con Formspree~~ ✅ Conectado (2026-04-14)
 4. Activar dominio personalizado rebel.cl en GitHub Pages
 
 ---
@@ -216,10 +226,9 @@ El link "Videos" fue eliminado completamente del navbar en las 9 páginas. El CS
 4. En el registrador de dominio, agregar registro DNS tipo CNAME apuntando a `tbellnazer3-cmyk.github.io`
 5. Activar "Enforce HTTPS"
 
-### Configurar formulario de contacto (Formspree)
-1. Ir a formspree.io y crear cuenta gratuita
-2. Crear nuevo formulario, copiar el endpoint (ej: `https://formspree.io/f/XXXXX`)
-3. En `contacto.html`, reemplazar `action="#"` por la URL de Formspree
+### Configurar formulario de contacto (Formspree) ✅
+Endpoint conectado: `https://formspree.io/f/mojyvkpz`
+Los mensajes llegan al email configurado en la cuenta Formspree del cliente.
 
 ---
 
