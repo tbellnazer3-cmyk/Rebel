@@ -82,8 +82,8 @@ img {
 .navbar-logo {
   font-family: var(--font-title);
   font-weight: 400;
-  font-size: 1.75rem;
-  letter-spacing: 0.35em;
+  font-size: 1.45rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--white);
   user-select: none;
@@ -460,40 +460,6 @@ img {
 /* Link activo en páginas internas */
 .navbar-links a.nav-active {
   color: var(--white);
-}
-
-/* Link deshabilitado (ej: Videos — próximamente) */
-.navbar-links a.nav-disabled {
-  color: rgba(255, 255, 255, 0.28);
-  cursor: default;
-  pointer-events: none;
-  position: relative;
-}
-
-.navbar-links a.nav-disabled::after {
-  content: 'Próximamente';
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(30, 30, 30, 0.95);
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  white-space: nowrap;
-  padding: 0.3rem 0.65rem;
-  border-radius: 3px;
-  border: 1px solid var(--border);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s ease;
-}
-
-/* El pointer-events: none del padre bloquea el hover en el pseudo-elemento,
-   así que habilitamos hover sólo en la envoltura li */
-.navbar-links li:has(a.nav-disabled):hover a.nav-disabled::after {
-  opacity: 1;
 }
 
 /* Páginas sin hero: compensa el navbar fijo */
@@ -1053,8 +1019,8 @@ img {
 .footer-logo {
   font-family: var(--font-title);
   font-weight: 400;
-  font-size: 1.4rem;
-  letter-spacing: 0.35em;
+  font-size: 1.2rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--white);
   text-decoration: none;

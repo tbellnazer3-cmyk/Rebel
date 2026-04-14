@@ -4,16 +4,17 @@
   Dependencias: css/styles.css (sección NAVBAR), js/main.js (sección Navbar)
   Fuentes: Barlow Condensed + Barlow desde Google Fonts
   Uso: Copiar el bloque <nav> dentro del <body>, antes de cualquier sección.
+       En páginas sin hero oscuro, agregar clase "scrolled" al <nav>.
+       En la página activa, agregar clase "nav-active" al link correspondiente.
 -->
 
-<nav class="navbar" role="navigation" aria-label="Navegación principal">
-  <a href="#inicio" class="navbar-logo">REBEL<span>.</span></a>
+<nav class="navbar scrolled" role="navigation" aria-label="Navegación principal">
+  <a href="index.html" class="navbar-logo">REBEL LTDA<span>.</span></a>
 
   <ul class="navbar-links" id="navbar-links">
-    <li><a href="#catalogos">Catálogos</a></li>
-    <li><a href="#productos">Productos</a></li>
-    <li><a href="#videos">Videos</a></li>
-    <li><a href="#contacto" class="nav-cta">Contáctanos</a></li>
+    <li><a href="catalogos.html">Catálogos</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li><a href="contacto.html" class="nav-cta">Contáctanos</a></li>
   </ul>
 
   <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbar-links">
