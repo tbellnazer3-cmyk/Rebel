@@ -11,16 +11,16 @@
 | Sección          | Estado        | Notas |
 |------------------|---------------|-------|
 | Estructura base  | ✅ Completo   | index.html, css/styles.css, js/main.js |
-| Navbar           | ✅ Completo   | Fijo, blur al scroll, hamburguesa mobile, Videos deshabilitado |
+| Navbar           | ✅ Completo   | Fijo, blur al scroll, hamburguesa mobile — 3 links activos |
 | Hero             | ✅ Completo   | Dos columnas, stats, grilla 2×2 de productos destacados |
 | Marcas           | ✅ Completo   | Franja blanca con 6 marcas y país de origen |
 | Catálogos        | ✅ Completo   | catalogos.html — 7 tarjetas con PDFs reales |
 | Productos        | ✅ Completo   | productos.html + 5 páginas individuales |
-| Videos           | 🚫 En pausa   | Cliente aún no tiene los videos nuevos listos (2026-04-12) |
-| Contacto         | ✅ Completo   | contacto.html — formulario + info + WhatsApp |
-| Footer           | ✅ Completo   | En todas las páginas — logo, links, teléfono, WhatsApp, email |
+| Videos           | 🚫 Eliminado  | Removido del navbar por decisión del cliente (2026-04-14) |
+| Contacto         | ✅ Completo   | contacto.html — formulario + info con emails reales |
+| Footer           | ✅ Completo   | Logo REBEL LTDA., teléfono, WhatsApp, emails reales |
 | WhatsApp flotante| ✅ Completo   | En todas las páginas — botón verde fijo esquina inferior derecha |
-| Responsivo       | ✅ Completo   | Revisado en Prompt 6 — mobile 375px y tablet 900px |
+| Responsivo       | ✅ Completo   | Mobile 375px y tablet 900px revisados |
 | GitHub           | ✅ Completo   | Repositorio en github.com/tbellnazer3-cmyk/Rebel — rama main |
 
 ---
@@ -52,11 +52,11 @@
 
 | Archivo | Descripción |
 |---------|-------------|
-| `skills/navbar.html` | Snippet del navbar |
+| `skills/navbar.html` | Snippet del navbar (sin Videos, logo REBEL LTDA.) |
 | `skills/hero.html` | Snippet del hero |
 | `skills/catalog-card.html` | Tarjeta de catálogo PDF |
 | `skills/product-page.html` | Template de página individual de producto |
-| `skills/footer.html` | Snippet del footer (actualizado con datos reales) |
+| `skills/footer.html` | Snippet del footer con datos reales |
 
 ### Recursos
 
@@ -83,6 +83,9 @@ Barlow Condensed (weight 400 — delgado y refinado) para títulos, Barlow para 
 - `#111111` — texto principal sobre fondo blanco
 - `#666666` — texto secundario / muted
 
+### Logo
+`REBEL LTDA.` con el punto final en rojo (`#C8200A`) como acento visual. Font-size 1.45rem, letter-spacing 0.18em en navbar; 1.2rem en footer.
+
 ### Estructura de páginas
 Sitio multi-página (no single page app). Cada sección principal tiene su propio archivo HTML:
 - `index.html` → Hero
@@ -105,8 +108,8 @@ El `<form>` en `contacto.html` tiene `action="#"` — requiere conectar con Form
 
 ## Decisiones del cliente
 
-### Videos — en pausa (2026-04-12)
-El cliente no tiene los videos nuevos listos. El link "Videos" en el navbar está visible pero deshabilitado con tooltip "Próximamente". No se creará `videos.html` hasta que el cliente entregue el material. El TODO está comentado en el navbar de todos los HTML.
+### Videos — eliminado (2026-04-14)
+El link "Videos" fue eliminado completamente del navbar en las 9 páginas. El CSS de `.nav-disabled` también fue removido. Si en el futuro el cliente entrega material de video, se debe crear `videos.html` y agregar el link nuevamente al navbar.
 
 ---
 
@@ -139,37 +142,34 @@ El cliente no tiene los videos nuevos listos. El link "Videos" en el navbar est�
 - Botón WhatsApp flotante (`#25D366`) en las 9 páginas
 - Skill: `footer.html`
 
-**Cierre de sesión día 1 (2026-04-12):**
+**Cierre sesión 1 (2026-04-12):**
 - Repositorio GitHub creado: https://github.com/tbellnazer3-cmyk/Rebel
 - Push exitoso a rama `main`
-- GitHub Pages disponible para activar desde Settings → Pages
 
-### Sesión 2 — Prompt 6 (2026-04-14)
+### Sesión 2 — Prompts 6 + ajustes finales (2026-04-14)
 
 **Prompt 6 — Revisión final:**
+- CSS: colapso tablet (900px) para product-page-layout y contact-layout
+- CSS: 1 columna mobile explícita para productos-grid, padding reducido
+- Footer: teléfono (+56 2 2672 8216) y WhatsApp (+56 9 9874 2476) en las 9 páginas
+- `loading="lazy"` en las 10 imágenes de producto
+- Copyright 2025 → 2026
 
 **Bugs corregidos:**
-- `index.html`: botón "Ver productos" apuntaba a `#productos` (hash inexistente) → corregido a `productos.html`
-- 5 páginas de producto: CTA "Contáctanos por este producto" apuntaba a `index.html#contacto` → corregido a `contacto.html`
+- Botón "Ver productos" en hero: `#productos` → `productos.html`
+- CTA "Contáctanos" en 5 páginas de producto: `index.html#contacto` → `contacto.html`
 
-**Responsivo mejorado (css/styles.css):**
-- Tablet (≤900px): `.product-page-layout` y `.contact-layout` ahora colapsan a 1 columna
-- Mobile (≤640px): `.productos-grid` colapsa explícitamente a 1 columna; `.section` padding reducido a 4rem; `.page-section` padding-top reducido
+**Ajustes finales del cliente:**
+- Logo actualizado: `REBEL.` → `REBEL LTDA.` en navbar y footer de las 9 páginas
+- CSS: font-size y letter-spacing del logo ajustados (1.75rem/0.35em → 1.45rem/0.18em)
+- Videos eliminado definitivamente del navbar en las 9 páginas
+- CSS de `.nav-disabled` y tooltip eliminados
+- Emails corregidos: `contacto@rebel.cl` → `ventas@rebel.cl` + `jbell@rebel.cl` en footer y contacto.html
+- skills/navbar.html y skills/footer.html actualizados con todos los cambios
 
-**Consistencia del footer:**
-- Agregados teléfono (+56 2 2672 8216) y WhatsApp (+56 9 9874 2476) en el footer de las 9 páginas
-- Copyright actualizado de 2025 a 2026
-- `skills/footer.html` actualizado con los mismos datos
-
-**Performance:**
-- `loading="lazy"` agregado a las 5 imágenes en `productos.html`
-- `loading="lazy"` agregado a la imagen en cada una de las 5 páginas individuales de producto
-
-**Skills verificadas:**
-- Todas las skills en `/skills/` están creadas y actualizadas
-
-**Git — cierre sesión 2 (2026-04-14):**
-- Push a https://github.com/tbellnazer3-cmyk/Rebel — rama main
+**Cierre sesión 2 (2026-04-14):**
+- Sitio completo — v1 lista para publicar
+- Push exitoso a https://github.com/tbellnazer3-cmyk/Rebel — rama main
 
 ---
 
@@ -179,7 +179,8 @@ El cliente no tiene los videos nuevos listos. El link "Videos" en el navbar est�
 |-------|-------|
 | Teléfono | +56 2 2672 8216 |
 | WhatsApp | +56 9 9874 2476 |
-| Email | contacto@rebel.cl |
+| Email ventas | ventas@rebel.cl |
+| Email directo | jbell@rebel.cl |
 | Ciudad | Santiago, Chile |
 | Fundación | 1980 |
 
@@ -191,7 +192,7 @@ El cliente no tiene los videos nuevos listos. El link "Videos" en el navbar est�
 
 ```
 # Agregar cuando corresponda
-# CONTACT_EMAIL=contacto@rebel.cl
+# CONTACT_EMAIL=ventas@rebel.cl
 # WA_NUMBER=56998742476
 ```
 
@@ -199,12 +200,10 @@ El cliente no tiene los videos nuevos listos. El link "Videos" en el navbar est�
 
 ## Pendientes del cliente
 
-1. Contenido real de cada página de producto (descripciones y características)
-2. Videos nuevos para habilitar la sección Videos
-3. Dirección física exacta para la página de Contacto
-4. Confirmar email de contacto (actualmente placeholder: contacto@rebel.cl)
-5. Configurar formulario de contacto con Formspree u otro servicio
-6. Activar dominio personalizado rebel.cl en GitHub Pages (Settings → Pages → Custom domain)
+1. Contenido real de cada página de producto (descripciones y características técnicas)
+2. Dirección física exacta para la página de Contacto
+3. Configurar formulario de contacto con Formspree u otro servicio
+4. Activar dominio personalizado rebel.cl en GitHub Pages
 
 ---
 
@@ -214,7 +213,7 @@ El cliente no tiene los videos nuevos listos. El link "Videos" en el navbar est�
 1. En el repositorio GitHub → Settings → Pages
 2. Source: rama `main`, carpeta `/ (root)`
 3. Custom domain: ingresar `rebel.cl`
-4. En el registrador de dominio, agregar registro DNS tipo CNAME: `tbellnazer3-cmyk.github.io`
+4. En el registrador de dominio, agregar registro DNS tipo CNAME apuntando a `tbellnazer3-cmyk.github.io`
 5. Activar "Enforce HTTPS"
 
 ### Configurar formulario de contacto (Formspree)
