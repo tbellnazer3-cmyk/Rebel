@@ -18,16 +18,16 @@
 | Productos        | ✅ Completo   | productos.html + 5 páginas individuales |
 | Videos           | 🚫 En pausa   | Cliente aún no tiene los videos nuevos listos (2026-04-12) |
 | Contacto         | ✅ Completo   | contacto.html — formulario + info + WhatsApp |
-| Footer           | ✅ Completo   | En todas las páginas — logo, links, info, copyright |
+| Footer           | ✅ Completo   | En todas las páginas — logo, links, teléfono, WhatsApp, email |
 | WhatsApp flotante| ✅ Completo   | En todas las páginas — botón verde fijo esquina inferior derecha |
-| Responsivo       | ⏳ Pendiente  | Revisión final en Prompt 6 |
+| Responsivo       | ✅ Completo   | Revisado en Prompt 6 — mobile 375px y tablet 900px |
 | GitHub           | ✅ Completo   | Repositorio en github.com/tbellnazer3-cmyk/Rebel — rama main |
 
 ---
 
 ## Archivos del proyecto
 
-### Páginas HTML (10 archivos)
+### Páginas HTML (9 archivos)
 
 | Archivo | Descripción |
 |---------|-------------|
@@ -40,7 +40,6 @@
 | `nes-internal.html` | Página individual — NES Internal Thread Repair |
 | `re-grip.html` | Página individual — Re-Grip |
 | `contacto.html` | Formulario de contacto + información |
-| `catalogos.html` | (ver arriba) |
 
 ### Estilos y Scripts
 
@@ -57,7 +56,7 @@
 | `skills/hero.html` | Snippet del hero |
 | `skills/catalog-card.html` | Tarjeta de catálogo PDF |
 | `skills/product-page.html` | Template de página individual de producto |
-| `skills/footer.html` | Snippet del footer |
+| `skills/footer.html` | Snippet del footer (actualizado con datos reales) |
 
 ### Recursos
 
@@ -93,9 +92,14 @@ Sitio multi-página (no single page app). Cada sección principal tiene su propi
 
 ### Imágenes de productos
 Almacenadas en `/productos/` (no en `/img/productos/` como estaba previsto originalmente).
+Todas tienen `alt` descriptivo y `loading="lazy"` para performance.
 
 ### Formulario de contacto
 El `<form>` en `contacto.html` tiene `action="#"` — requiere conectar con Formspree u otro servicio antes de publicar.
+
+### Responsivo
+- Tablet (≤900px): hero, product-page-layout y contact-layout colapsan a 1 columna
+- Mobile (≤640px): navbar hamburguesa, secciones en 1 columna, WhatsApp solo ícono
 
 ---
 
@@ -140,11 +144,44 @@ El cliente no tiene los videos nuevos listos. El link "Videos" en el navbar est�
 - Push exitoso a rama `main`
 - GitHub Pages disponible para activar desde Settings → Pages
 
-**Pendiente para Prompt 6 (día 2):**
-- Revisión responsivo en mobile y tablet
-- Verificación de todos los links internos
-- Performance (lazy loading de imágenes)
-- Activar dominio personalizado rebel.cl en GitHub Pages
+### Sesión 2 — Prompt 6 (2026-04-14)
+
+**Prompt 6 — Revisión final:**
+
+**Bugs corregidos:**
+- `index.html`: botón "Ver productos" apuntaba a `#productos` (hash inexistente) → corregido a `productos.html`
+- 5 páginas de producto: CTA "Contáctanos por este producto" apuntaba a `index.html#contacto` → corregido a `contacto.html`
+
+**Responsivo mejorado (css/styles.css):**
+- Tablet (≤900px): `.product-page-layout` y `.contact-layout` ahora colapsan a 1 columna
+- Mobile (≤640px): `.productos-grid` colapsa explícitamente a 1 columna; `.section` padding reducido a 4rem; `.page-section` padding-top reducido
+
+**Consistencia del footer:**
+- Agregados teléfono (+56 2 2672 8216) y WhatsApp (+56 9 9874 2476) en el footer de las 9 páginas
+- Copyright actualizado de 2025 a 2026
+- `skills/footer.html` actualizado con los mismos datos
+
+**Performance:**
+- `loading="lazy"` agregado a las 5 imágenes en `productos.html`
+- `loading="lazy"` agregado a la imagen en cada una de las 5 páginas individuales de producto
+
+**Skills verificadas:**
+- Todas las skills en `/skills/` están creadas y actualizadas
+
+**Git — cierre sesión 2 (2026-04-14):**
+- Push a https://github.com/tbellnazer3-cmyk/Rebel — rama main
+
+---
+
+## Datos de contacto reales
+
+| Campo | Valor |
+|-------|-------|
+| Teléfono | +56 2 2672 8216 |
+| WhatsApp | +56 9 9874 2476 |
+| Email | contacto@rebel.cl |
+| Ciudad | Santiago, Chile |
+| Fundación | 1980 |
 
 ---
 
@@ -167,10 +204,26 @@ El cliente no tiene los videos nuevos listos. El link "Videos" en el navbar est�
 3. Dirección física exacta para la página de Contacto
 4. Confirmar email de contacto (actualmente placeholder: contacto@rebel.cl)
 5. Configurar formulario de contacto con Formspree u otro servicio
-6. Definir hosting: Netlify o GitHub Pages
+6. Activar dominio personalizado rebel.cl en GitHub Pages (Settings → Pages → Custom domain)
+
+---
+
+## Próximos pasos
+
+### Activar rebel.cl en GitHub Pages
+1. En el repositorio GitHub → Settings → Pages
+2. Source: rama `main`, carpeta `/ (root)`
+3. Custom domain: ingresar `rebel.cl`
+4. En el registrador de dominio, agregar registro DNS tipo CNAME: `tbellnazer3-cmyk.github.io`
+5. Activar "Enforce HTTPS"
+
+### Configurar formulario de contacto (Formspree)
+1. Ir a formspree.io y crear cuenta gratuita
+2. Crear nuevo formulario, copiar el endpoint (ej: `https://formspree.io/f/XXXXX`)
+3. En `contacto.html`, reemplazar `action="#"` por la URL de Formspree
 
 ---
 
 ## Problemas conocidos
 
-_Ninguno por ahora._
+_Ninguno._

@@ -1120,6 +1120,22 @@ img {
   .hero-right {
     max-width: 480px;
   }
+
+  /* Producto individual: apilado en tablet */
+  .product-page-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .product-page-img-wrap {
+    position: static;
+  }
+
+  /* Contacto: apilado en tablet */
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 }
 
 /* Mobile */
@@ -1200,6 +1216,20 @@ img {
 
   .marca-item:first-child {
     padding-left: 0;
+  }
+
+  /* Secciones: padding reducido en mobile */
+  .section {
+    padding: 4rem 5%;
+  }
+
+  .page-section {
+    padding-top: calc(68px + 2rem);
+  }
+
+  /* Productos: 1 columna en mobile */
+  .productos-grid {
+    grid-template-columns: 1fr;
   }
 
   /* Catálogos: 2 columnas en mobile */
