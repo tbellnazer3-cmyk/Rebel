@@ -181,6 +181,18 @@ El link "Videos" fue eliminado completamente del navbar en las 9 páginas. El CS
 **Cierre sesión 3 (2026-04-14):**
 - Push exitoso a https://github.com/tbellnazer3-cmyk/Rebel — rama main
 
+### Sesión 4 — Contenido real de productos (2026-06-18)
+
+**Descripciones reales ingresadas en los 5 productos:**
+- `drill-out.html` — descripción + 7 características técnicas
+- `insertos-autofrenos.html` — descripción + Línea Autofreno como bloque independiente + 7 características + normas
+- `nes-external.html` — descripción + 4 características + aplicaciones frecuentes
+- `nes-internal.html` — descripción (Studsaver) + 5 características + aplicaciones frecuentes
+- `re-grip.html` — descripción + 7 características
+
+**Cierre sesión 4 (2026-06-18):**
+- Push exitoso a https://github.com/tbellnazer3-cmyk/Rebel — rama main
+
 ---
 
 ## Datos de contacto reales
@@ -210,7 +222,7 @@ El link "Videos" fue eliminado completamente del navbar en las 9 páginas. El CS
 
 ## Pendientes del cliente
 
-1. Contenido real de cada página de producto (descripciones y características técnicas)
+1. ~~Contenido real de cada página de producto~~ ✅ Completado (2026-06-18)
 2. Dirección física exacta para la página de Contacto
 3. ~~Configurar formulario de contacto con Formspree~~ ✅ Conectado (2026-04-14)
 4. Activar dominio personalizado rebel.cl en GitHub Pages
